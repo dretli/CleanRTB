@@ -192,6 +192,8 @@ namespace Vidly.Controllers
                     return 5;
 
 
+            if (GlobalVariables.glob_risk_list.Count >= 30)
+                return 6;
             return 0;
         }
     }
