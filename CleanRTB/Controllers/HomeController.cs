@@ -8,6 +8,7 @@ namespace RiskTableBuilderWebApp.Controllers
 {
     public class HomeController : Controller
     {
+        //Returns Home Page
         public ActionResult Index()
         {
             return View();
