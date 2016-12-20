@@ -22,13 +22,13 @@
         <td>
             @{var CategoryItems = new List<SelectListItem>
             {
-                    new SelectListItem { Text = "PS", Value="PS" },         //product size
-                    new SelectListItem { Text = "BU", Value="BU" },   //business impact
-                    new SelectListItem { Text = "SC", Value="SC" },   //stakeholder characteristics
-                    new SelectListItem { Text = "PD", Value="PD" },   //process definition
-                    new SelectListItem { Text = "DE", Value="DE" },   //Development environment
-                    new SelectListItem { Text = "TE", Value="TE" },   //Technology to be built
-                    new SelectListItem { Text = "ST", Value="ST" }    //staff size and experience
+                    new SelectListItem { Text = "PS - Product Size", Value="PS" },         //product size
+                    new SelectListItem { Text = "BU - Business Impact", Value="BU" },   //business impact
+                    new SelectListItem { Text = "SC - Stakeholder Characteristics", Value="SC" },   //stakeholder characteristics
+                    new SelectListItem { Text = "PD - Process Definition", Value="PD" },   //process definition
+                    new SelectListItem { Text = "DE - Development Environment", Value="DE" },   //Development environment
+                    new SelectListItem { Text = "TE - Technology to be Built ", Value="TE" },   //Technology to be built
+                    new SelectListItem { Text = "ST - Staff Size and Experience", Value="ST" }    //staff size and experience
             };
             }
             @Html.DropDownListFor(m => m.risk_category, new SelectList(CategoryItems, "Value", "Text"))
